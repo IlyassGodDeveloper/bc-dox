@@ -86,7 +86,7 @@ return;
         message.guild.members.forEach(m => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             var bc = new Discord.RichEmbed()
-            .addField(' » الرسالة : ', args)
+            .addField(' » Massage : ', args)
             .setColor('#ff0000')
             // m.send(`[${m}]`);
             m.send(`${m}`,{embed: bc});
@@ -104,19 +104,19 @@ if (message.guild) {
 let embed = new Discord.RichEmbed()
 let args = message.content.split(' ').slice(1).join(' ');
 if(message.content.split(' ')[0] == prefix + 'bc2') {
-if(!message.channel.guild) return message.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
+if(!message.channel.guild) return message.reply('**:x: Sorry but this is only for servers **');         
 if (!args[1]) {
 return;
 }
   message.guild.members.forEach(m => {
 if(!message.member.hasPermission('ADMINISTRATOR')) return;
       var bc = new Discord.RichEmbed()
-      .addField('# | الرسالة ', args)
+      .addField('# | Massage ', args)
       .setThumbnail(message.guild.iconURL)
       .setColor('RANDOM')
       m.sendMessage(args)
   });
-         if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(":x: **ليس لديك صلاحية للنشر هنا**");
+         if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(":x: **You do not have permission to post here**");
   const AziRo = new Discord.RichEmbed()   
   .setColor('RANDOM')
   message.channel.sendEmbed(AziRo);          
@@ -135,7 +135,7 @@ client.on("message", message => {
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
  m.send(`${argresult}\n ${m}`);
 })
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : Number of receiving members`); 
  message.delete(); 
 };     
 });
