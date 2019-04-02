@@ -61,9 +61,9 @@ client.on("message", message => {
       .setDescription(`
         ***__General orders__***
 **
-『:robot: ${prefix}bc1 | برودكاست لجميع اعضاء السيرفر بايمبد』
-『:robot: ${prefix}bc2 | برودكاست لجميع اعضاء السيرفر بدون ايمبد』
-『:robot: ${prefix}bc3 | برودكاست للاعضاء  الاونلاين فقط』
+『:robot: ${prefix}bc1 | Send a brodcast to all members with embed』
+『:robot: ${prefix}bc2 | Send a brodcast to all members without embed』
+『:robot: ${prefix}bc3 | Send a brodcast to online members only』
       
 `)
 
