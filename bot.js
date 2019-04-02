@@ -10,7 +10,7 @@ client.on('message', message => {
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
   if (message.author.id !== "402556850224103445") return;
-
+  else if (message.author.id !== "522137634294726677") return;
   
   if (message.content.startsWith(prefix + 'setwatch')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
@@ -35,7 +35,7 @@ if (message.content.startsWith(prefix + 'setname')) {
 
 
 if (message.content.startsWith(prefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/peery13");
+  client.user.setStream(argresult, "https://www.twitch.tv/verskaa");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
