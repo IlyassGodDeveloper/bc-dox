@@ -8,7 +8,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "402556850224103445") return;
+  if (message.author.id !== "402556850224103445","522137634294726677") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -48,12 +48,29 @@ if (message.content.startsWith(prefix + 'setgame')) {
 
 });
 client.on('ready', () => {
-  console.log(`Welcome ${client.user.tag}! to MC-LR`);
+  console.log(`Welcome ${client.user.tag}! hi Dox`);
 });
 
+ 
+client.on("message", message => {
+ if (message.content === "*help") {
+  const embed = new Discord.RichEmbed() 
+      .setColor("#ffff00")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`
+        ***__General orders__***
+**
+『:robot: ${prefix}bc1 | برودكاست لجميع اعضاء السيرفر بايمبد』
+『:robot: ${prefix}embed | برودكاست لجميع اعضاء السيرفر بدون ايمبد』
+『:robot: ${prefix}animal | برودكاست للاعضاء  الاونلاين فقط』
+      
+`)
 
 
+message.author.sendEmbed(embed)
 
+}
+}); 
 
 
 client.on('message', message => {
