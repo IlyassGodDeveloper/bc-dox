@@ -10,7 +10,7 @@ client.on('message', message => {
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
   if (message.author.id !== "402556850224103445") return;
-  else if (message.author.id !== "522137634294726677") return;
+  
   
   if (message.content.startsWith(prefix + 'setwatch')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
