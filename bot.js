@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
 
-var prefix = "*"
+const prefix = "*";
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
