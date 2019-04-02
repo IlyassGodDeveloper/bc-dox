@@ -35,7 +35,7 @@ if (message.content.startsWith(prefix + 'setname')) {
 
 
 if (message.content.startsWith(prefix + 'setT')) {
-  client.user.setStream(argresult, "https://www.twitch.tv/verskaa");
+  client.user.setGame(argresult, "https://www.twitch.tv/verskaa");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
@@ -62,8 +62,8 @@ client.on("message", message => {
         ***__General orders__***
 **
 『:robot: ${prefix}bc1 | برودكاست لجميع اعضاء السيرفر بايمبد』
-『:robot: ${prefix}embed | برودكاست لجميع اعضاء السيرفر بدون ايمبد』
-『:robot: ${prefix}animal | برودكاست للاعضاء  الاونلاين فقط』
+『:robot: ${prefix}bc2 | برودكاست لجميع اعضاء السيرفر بدون ايمبد』
+『:robot: ${prefix}bc3 | برودكاست للاعضاء  الاونلاين فقط』
       
 `)
 
