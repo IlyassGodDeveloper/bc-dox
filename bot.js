@@ -116,10 +116,7 @@ client.on("message", message => {
 『:robot: ${prefix}يخيرك بين شي وشي | لو خيروك』
 『:robot: ${prefix}يعطيك عقاب و لازم تنفذه | عقاب』
 『:robot: ${prefix}cuttweet | لعبه اسئله  』
-        ***__Fun orders__***
-
-『:smiley_cat:  ${prefix}doxcats | Gives you pictures cats』
-
+     
  
 
 `)
