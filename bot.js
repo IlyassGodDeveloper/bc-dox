@@ -2,7 +2,24 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
 
-const prefix = "*";
+
+
+var prefix = "*";
+var cats = ["https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'cats')) {
+         var cat = new Discord.RichEmbed()
+.setImage(cats[Math.floor(Math.random() * cats.length)])
+message.channel.sendEmbed(cat);
+    }
+});
+
+
+
+
+
+
 
 client.on('message', message => {
   var prefix = "*";
@@ -53,16 +70,8 @@ client.on('ready', () => {
   console.log(`Welcome ${client.user.tag}! hi Dox`);
 });
 
-  var prefix = "*";
-var cats = ["https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"]
-    client.on('message', message => {
-        var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'cats')) {
-         var cat = new Discord.RichEmbed()
-.setImage(cats[Math.floor(Math.random() * cats.length)])
-message.channel.sendEmbed(cat);
-    }
-});
+  
+
 
 client.on("message", message => {
  if (message.content === "*help") {
