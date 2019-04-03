@@ -54,7 +54,7 @@ client.on('ready', () => {
 });
 
   var prefix = "*";
-var cats = ["https://f.top4top.net/p_1188e4mkg1.gif","https://a.top4top.net/p_1188bs6m12.gif","https://a.top4top.net/p_1188bs6m12.gif","https://c.top4top.net/p_11882zoss1.gif","https://d.top4top.net/p_11887mz9v2.gif","https://e.top4top.net/p_11889zdhx3.gif","https://f.top4top.net/p_11886ntdl4.gif"]
+var cats = ["https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'cats')) {
