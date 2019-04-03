@@ -45,7 +45,17 @@ if (message.content.startsWith(prefix + 'setgame')) {
     message.channel.sendMessage(`Playing: **${argresult}`)
 } 
 
-
+  
+    var prefix = "*";
+var cats = ["https://f.top4top.net/p_1188e4mkg1.gif","https://a.top4top.net/p_1188bs6m12.gif","https://a.top4top.net/p_1188bs6m12.gif","https://c.top4top.net/p_11882zoss1.gif","https://d.top4top.net/p_11887mz9v2.gif","https://e.top4top.net/p_11889zdhx3.gif","https://f.top4top.net/p_11886ntdl4.gif","","","","","","",""]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'cats')) {
+         var cat = new Discord.RichEmbed()
+.setImage(cats[Math.floor(Math.random() * cats.length)])
+message.channel.sendEmbed(cat);
+    }
+});
 
 });
 client.on('ready', () => {
