@@ -89,6 +89,7 @@ client.on("message", message => {
 
 『:smiley_cat:  ${prefix}doxcats | Gives you pictures cats』
 
+message.author.sendEmbed(embed)
 
 `)
 
